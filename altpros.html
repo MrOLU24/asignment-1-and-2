@@ -6,9 +6,25 @@
     <title>Document</title>
   </head>
   <body>
-   <picture>
-    <source srcset="" media="">
-   </picture>
-   <img src="arya.jpg" alt="uoo">
+    <h1>Picture Element</h1>
+    <figure>
+      <picture>
+        <source srcset="cropimage.jpg" media="(max-width: 600px)" />
+        <source srcset="selfie.jpg" media="(max-width: 700x)" />
+        <source srcset="selfie.jpg" media="(min-width: 910px)" />
+        <img src="imagecopy.jpg" alt="fall back image" />
+      </picture>
+    </figure>
+    <h2>Audio</h2>
+    <audio controls>
+      <source src="my-audio (online-audio-converter.com).mp3" />
+    </audio>
+    <br>
+    <h2>Video</h2>
+    <video controls>
+      <source src="my-video1 (online-video-cutter.com).mp4" />
+    </video>
+    <br>
+    <a href="althome.html">Back to homepage</a>
   </body>
 </html>
