@@ -5,56 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unlock your Potential with AltShcool Africa - Sign Up Now!</title>
-    <link rel="icon" href="altlogotwo.png">
+    <link rel="icon" href="./media/altlogotwo.png">
     <link rel="stylesheet" href="altf.css">
 </head>
 
 <body>
-    <img src="altlogotwo.png" alt="altlogotwo">
-    <h3>Already an AltShcooler? <a href="#">Sign in!</a></h3>
-    <br>
+    <div class="image-container">
+        <img class="image" src="./media/altlogotwo.png" alt="altlogotwo">
+    </div>
+    <div class="altpara">
+        <p>Already an AltShcooler? <a href="#">Sign in!</a></p>
+    </div>
     <h3>Signup</h3>
-    <span><small>Take the next steps to apply at AltSchool African</small></span>
-    <div class="form-wrap">
-        <form action="althome.html"><br>
-            <div>
-                <label for="fname">First Name</label><br>
-                <input type="text" id="fname" name="fname" placeholder="Enter first name" required>
-            </div>
-            <br>
-            <div>
-                <label for="lname">Last name</label><br>
-                <input type="text" id="lname" name="laname" placeholder="Enter Last Name" required>
-            </div>
-            <br>
-            <div>
-                <label for="select">Gender</label><br>
-                <select name="select" id="select">
-                    <option value="male">Select gender</option>
+    <h4>Take the next steps to apply at AltSchool Africa</h4>
+    <form action="althome.html">
+        <div class="form-1">
+            <span class="form-container">
+                <label for="text">First Name</label>
+                <input id="input" type="text" placeholder="Enter First Name ">
+            </span>
+            <span class="form-container">
+                <label for="text">Last Name</label>
+                <input id="input" type="text" placeholder="Enter Last Name ">
+            </span>
+            <span>
+                <label id="first-label" for="gender">Gender</label>
+                <select>
+                    <option value="" disabled selected hidden>Select gender</option>
                     <option value="male">male</option>
                     <option value="fmale">female</option>
                 </select>
-            </div>
-            <br>
-            <div>
-                <label for="dob">Date of Birth</label><br>
-                <input type="date" required>
-            </div>
-            <br>
-            <div>
-                <label for="email">Email Address</label><br>
-                <input type="email" id="email" name="email" placeholder="Enter email address" required>
-            </div>
-            <br>
-            <div>
-                <label for="phone">Phone Number</label><br>
-                <input type="tel" id="phone" name="phone" placeholder="0801234567890" required>
-            </div>
-            <br>
-            <div>
-                <label for="select">Country</label><br>
-                <select name="select" id="select">
-                    <option value="male">Select your country</option>
+            </span>
+            <span>
+                <label id="date-container" for="date">Date of Birth</label>
+                <input id="sideinput" type="date">
+            </span>
+            <span>
+                <label id="email-label" for="email">Email Address</label>
+                <input id="topinput" type="email" required placeholder="Enter email address">
+            </span>
+            <span>
+                <label id="phone-label" for="phone">Phone Number</label>
+                <input id="third-input" type="text" placeholder="08154387000">
+            </span>
+            <span>
+                <label id="country-label" for="select">Country</label><br>
+                <select>
+                    <option value="" disabled selected hidden>Select your country</option>
                     <option value="male">Nigeria</option>
                     <option value="fmale">Belgium</option>
                     <option value="fmale">Benin</option>
@@ -70,17 +67,15 @@
                     <option value="fmale">Poland</option>
                     <option value="fmale">San Marino</option>
                 </select>
-            </div>
-            <br>
-            <div>
-                <label for="state">State/City of Residence</label><br>
-                <input type="text" id="Select state of residence" name="Select state of residence"
-                    placeholder="Enter your state of residence" required>
-            </div>
-            <br>
-            <div>
-                <label for="channel">How did you hear about us?</label><br>
-                <select name="select channel" id="select channel">
+            </span>
+            <span>
+                <label id="state-label" for="state">State/City of Residence</label><br>
+                <input id="state-input" type="text" name="residence" placeholder="Enter your state of residence"
+                    required>
+            </span>
+            <span>
+                <label id="channel-label" for="channel">How did you hear about us?</label><br>
+                <select>
                     <option value="channel">Select channel</option>
                     <option value="channel">Twitter</option>
                     <option value="channel">Facebook</option>
@@ -91,26 +86,21 @@
                     <option value="channel">Instagram</option>
                     <option value="channel">Bill Board</option>
                 </select>
-            </div>
-            <div>
-                <br>
-                <label for="pass">Password</label><br>
-                <input type="password" id="password" name="password" placeholder="Enter password" required>
-            </div>
-            <br>
-            <div>
-                <label for="pass">Confirm Password</label><br>
-                <input type="password" id="password" name="password" placeholder="Enter password" required>
-            </div>
-            <br>
-            <small>By clicking continue, I agree to Terms of Use and acknowledge that i have read the Privacy
-                Policy.</small><br>
-            <br>
-            <span>
-                <button>Submit</button>
             </span>
-        </form>
-    </div>
+            <span>
+                <label id="pass-label" for="pass">Password</label>
+                <input id="pass-input" type="password" name="password" placeholder="Enter password" required>
+            </span>
+            <span>
+                <label id="pass-label" for="pass">Confirm Password</label>
+                <input id="pass-input" type="password" name="password" placeholder="Enter password again" required>
+            </span>
+                <span class="agree">By clicking continue, I agree to <b>Terms of Use</b> and acknowledge that i have read the <b>Privacy Policy.</b></span>
+                <span>
+                    <button>Submit</button>
+                </span>
+        </div>
+    </form>
 </body>
 
 </html

@@ -1,1 +1,160 @@
-
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+.image {
+  width: 20%;
+}
+.altpara {
+  display: flex;
+  justify-content: center;
+}
+p {
+  font-family: sans-serif;
+  color: #0f0f19;
+  margin: 0px 0px 16px;
+}
+h3 {
+  margin: 0px 0px 10px;
+  font-weight: bolder;
+}
+h4{
+    font-weight: lighter;
+    margin: 0px 0px 25px;
+}
+a{
+ text-decoration: none;
+}
+.form-1{
+  /* width: 95%;
+  height: 80%; */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.form-container{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+input{
+  height: 50px;
+  border: none;
+  background-color: #fffcf8;
+  border-radius: 5px;
+ padding-left: 10px;
+}
+#input:hover{
+  border: 2px solid blue;
+}
+/* here I try changing the default dropdown color from blue but i didn't get it */
+#first-label{
+  display: block;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+select{
+  width: 100%;
+  height: 70px;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #fffcf8 ;
+  color: black;
+  padding: 10px;
+}
+#date-container{
+  display: block;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+#sideinput{
+  width: 95%;
+  height: 60px;
+  border-radius: 5px;
+  background-color: #fffcf8;
+  border: none;
+}
+#sideinput:hover{
+  border: 2px solid blue;
+}
+#email-label{
+  display: block;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+#topinput{
+  width: 95%;
+  height: 55px;
+  border-radius: 5px;
+}
+#topinput:hover{
+  border: 2px solid blue;
+}
+#phone-label{
+  display: block;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+#third-input{
+  width: 95%;
+  height: 55px;
+  border-radius: 5px;
+}
+#third-input:hover{
+  border: 2px solid blue;
+}
+#country-label{
+  display: block;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+#state-label{
+  display: block;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+#state-input{
+  width: 95%;
+  height: 55px;
+}
+#state-input:hover{
+  border: 2px solid blue;
+}
+#channel-label{
+  display: block;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+#pass-label{
+  display: block;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+#pass-input{
+  width: 95%;
+  height: 65px;
+}
+#pass-input:hover{
+  border: 2px solid blue;
+}
+.agree{
+  color: grey;
+}
+.agree b{
+  color: #c7d4ee;
+}
+span button{
+  width: 95%;
+  height: 45px;
+  border-radius: 10px;
+  background-color:#6a6ff5;
+  color: white;
+  border: none;
+}
+span button:hover{
+  background-color: #7376c6;
+}
