@@ -30,3 +30,14 @@ nav ul li a{
 nav ul li a:hover{
     text-decoration: underline;
 }
+#foot {
+    text-align: center;
+    color: white;
+    background-color: rgb(8, 8, 12);
+    border-top: 5px solid #ff7e5f;
+    padding: 1rem;
+    margin-top: 20px;
+  }
+  footer p {
+    margin: 0%;
+  }

@@ -1,3 +1,7 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
 picture img{
     width: 100%;
     height: auto;
@@ -6,3 +10,18 @@ video{
     width: 50%;
     height: auto;
 }
+span{
+    display: flex;
+    margin-top: 20px;
+}
+#foot {
+    text-align: center;
+    color: white;
+    background-color: rgb(8, 8, 12);
+    border-top: 5px solid #ff7e5f;
+    padding: 1rem;
+    margin-top: 20px;
+  }
+  footer p {
+    margin: 0%;
+  }

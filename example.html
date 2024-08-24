@@ -3,40 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Label and Select Styling</title>
+    <title>Table with Spacing</title>
     <style>
-        .form-group {
-            margin-bottom: 20px;   /* Space between form groups (label + select) */
+        /* Global Reset */
+        * {
+            padding: 0;
+            margin: 0;
         }
 
-        label {
-            display: block;        /* Label takes up full width, so select goes below */
-            font-size: 16px;       /* Adjust label font size */
-            color: #333;           /* Set label text color */
-            margin-bottom: 10px;   /* Space between label and select */
+        /* Container with Padding */
+        .table-container {
+            padding: 0 20px; /* Add space on both sides of the table */
+            max-width: 1200px; /* Optional: Limit the maximum width of the container */
+            margin: 20px auto; /* Center the container */
         }
 
-        select {
-            width: 300px;          /* Set the width of the select box */
-            height: 40px;          /* Set the height of the select box */
-            padding: 5px;          /* Add padding inside the select box */
-            border: 1px solid #ccc;/* Set the border color and style */
-            border-radius: 5px;    /* Add rounded corners to the select box */
-            font-size: 16px;       /* Adjust font size */
-            background-color: #f0f0f0; /* Background color for the select box */
+        /* Table Styling */
+        table {
+            width: 100%; /* Set the width of the table relative to the container */
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
         }
     </style>
 </head>
 <body>
 
-<div class="form-group">
-    <label for="options">Choose an option:</label>
-    <select id="options">
-        <option value="" disabled selected hidden>Select an option</option>
-        <option value="1">Option 1</option>
-        <option value="2">Option 2</option>
-        <option value="3">Option 3</option>
-    </select>
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+            </tr>
+            <tr>
+                <td>Data 4</td>
+                <td>Data 5</td>
+                <td>Data 6</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
 
 </body>
